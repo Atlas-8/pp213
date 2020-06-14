@@ -17,8 +17,8 @@ public class AppConfig {
         return new Dog();
     }
 
-    @Bean
-    public Timer getTime() {
+    @Bean("Timer.class")
+    public Timer timer() {
         return new Timer();
     }
 
